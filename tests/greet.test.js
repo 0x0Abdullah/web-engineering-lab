@@ -3,6 +3,6 @@ const assert = require("node:assert/strict");
 
 const { greet } = require("../public/script.js");
 
-test('greet("World") returns "Hello, World!"', () => {
-  assert.equal(greet("World"), "Hello, World!");
+test('greet("Muhammad Abdullah") returns "Hello, Muhammad Abdullah!"', () => {
+  assert.equal(greet("Muhammad Abdullah"), "Hello, Muhammad Abdullah!");
 });

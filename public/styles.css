@@ -1,25 +1,50 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid #0b5fff;
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 10px;
+  top: -50px;
+  padding: 10px 15px;
+  background: #0b3d91;
+  color: white;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  top: 10px;
+}
+
+nav ul {
+  list-style: none;
   padding: 0;
-}
-
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #1e1e2e;
-  color: #cdd6f4;
-  min-height: 100vh;
+  margin: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  gap: 20px;
 }
 
-.container {
-  text-align: center;
-  padding: 2rem;
+input,
+textarea,
+button,
+select {
+  font: inherit;
 }
 
-#greeting {
-  font-size: 2.5rem;
-  color: #89b4fa;
+textarea {
+  width: 100%;
+  max-width: 500px;
+}
+
+#email-hint {
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 4px;
 }

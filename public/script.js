@@ -5,7 +5,7 @@ function greet(name) {
 if (typeof window !== "undefined" && typeof document !== "undefined") {
   const heading = document.getElementById("greeting");
   if (heading) {
-    heading.textContent = greet("World");
+    heading.textContent = greet("Muhammad Abdullah");
   }
 }
 
