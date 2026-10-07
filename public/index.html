@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -204,4 +204,440 @@
 
   <script src="script.js"></script>
 </body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Engineering Lab 03</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="page-reset">
+
+    <a href="#main-content" class="skip-link">
+        Skip to main content
+    </a>
+
+
+    <header class="site-header">
+
+        <div class="header-container">
+            <h1 id="greeting">Web Engineering Lab 03</h1>
+
+            <nav aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+
+                    <li><a href="#about" class="nav-link">About</a></li>
+
+                    <li><a href="#services" class="nav-link">Services</a></li>
+
+                    <li>
+                        <a href="#schedule" class="nav-link" aria-current="location">
+                            Office Hours
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#feedback" class="nav-link">
+                            Send Feedback
+                        </a>
+                    </li>
+
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+
+
+    <main id="main-content">
+
+        
+        <section id="schedule" class="section office-hours">
+
+            <h2 id="schedule-heading">Office Hours</h2>
+
+            
+            <figure class="location-info">
+
+                <svg
+                    role="img"
+                    aria-labelledby="pin-title"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+
+                    <title id="pin-title">Location pin</title>
+
+                    <path
+                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"
+                        fill="currentColor">
+                    </path>
+
+                </svg>
+
+                <figcaption class="text-muted">
+                    All office hours are held in Room 214.
+                </figcaption>
+
+            </figure>
+
+
+            
+            <table>
+
+                <caption>
+                    Our weekly office hours
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Day</th>
+                        <th scope="col">Opening Time</th>
+                        <th scope="col">Closing Time</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <th scope="row">Monday</th>
+                        <td><time datetime="09:00">9:00 AM</time></td>
+                        <td><time datetime="17:00">5:00 PM</time></td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Tuesday</th>
+                        <td><time datetime="09:00">9:00 AM</time></td>
+                        <td><time datetime="17:00">5:00 PM</time></td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Wednesday</th>
+                        <td><time datetime="09:00">9:00 AM</time></td>
+                        <td><time datetime="17:00">5:00 PM</time></td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Thursday</th>
+                        <td><time datetime="09:00">9:00 AM</time></td>
+                        <td><time datetime="17:00">5:00 PM</time></td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Friday</th>
+                        <td><time datetime="09:00">9:00 AM</time></td>
+                        <td><time datetime="17:00">5:00 PM</time></td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Saturday</th>
+                        <td><time datetime="10:00">10:00 AM</time></td>
+                        <td><time datetime="14:00">2:00 PM</time></td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Sunday</th>
+                        <td colspan="2">Closed</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <!-- Lab 2 table kept for reference:
+            <table>
+                <caption>Weekly office hours</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Day</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Instructor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Monday</th>
+                        <td>
+                            <time datetime="10:00">10:00</time>
+                            &ndash;
+                            <time datetime="11:00">11:00</time>
+                        </td>
+                        <td>Dr. Ahmed</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Wednesday</th>
+                        <td>
+                            <time datetime="12:00">12:00</time>
+                            &ndash;
+                            <time datetime="13:00">13:00</time>
+                        </td>
+                        <td>Dr. Ahmed</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Friday</th>
+                        <td>
+                            <time datetime="14:00">14:00</time>
+                            &ndash;
+                            <time datetime="15:00">15:00</time>
+                        </td>
+                        <td>Dr. Ahmed</td>
+                    </tr>
+                </tbody>
+            </table>
+            -->
+
+        </section>
+
+
+        <div class="divider" aria-hidden="true">
+
+            <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+
+                <circle
+                    cx="12"
+                    cy="12"
+                    r="8"
+                    fill="currentColor">
+                </circle>
+
+            </svg>
+
+        </div>
+
+
+        
+        <section id="feedback" class="section">
+
+            <h2>Send Feedback</h2>
+
+            <form action="#" method="post">
+
+                
+                <p class="form-group">
+
+                    <label for="name">
+                        Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required>
+
+                </p>
+
+
+                
+                <p class="form-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        aria-describedby="email-hint">
+
+                    <span id="email-hint" class="hint text-muted">
+                        We will only use this to reply to you.
+                    </span>
+
+                </p>
+
+
+                <fieldset>
+
+                    <legend>Topic</legend>
+
+                    <div class="radio-option">
+
+                        <input
+                            type="radio"
+                            id="general"
+                            name="topic"
+                            value="general"
+                            required>
+
+                        <label for="general">
+                            General Question
+                        </label>
+
+                    </div>
+
+
+                    <div class="radio-option">
+
+                        <input
+                            type="radio"
+                            id="course"
+                            name="topic"
+                            value="course">
+
+                        <label for="course">
+                            Course
+                        </label>
+
+                    </div>
+
+
+                    <div class="radio-option">
+
+                        <input
+                            type="radio"
+                            id="accessibility"
+                            name="topic"
+                            value="accessibility">
+
+                        <label for="accessibility">
+                            Accessibility
+                        </label>
+
+                    </div>
+
+                </fieldset>
+
+
+                
+                <p class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        required></textarea>
+
+                </p>
+
+                <button type="submit">
+                    Send Feedback
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer id="contact">
+
+        <address>
+            Contact your instructor for help.
+        </address>
+
+    </footer>
+
+</body>
 </html>
+
+<!--
+   PREVIOUS ACTIVE DRAFT (kept for reference, not rendered):
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+
+    <main>
+     <section id="contact">
+        <h1>Skip to main contant<h1>
+        <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#office-hours">Office Hours</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </section>
+    
+
+    <section class="office-hours">
+    <h2>Office Hours</h2>
+
+    <table>
+        <caption>Our weekly office hours</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Day</th>
+                <th scope="col">Opening Time</th>
+                <th scope="col">Closing Time</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">Monday</th>
+                <td><time datetime="09:00">9:00 AM</time></td>
+                <td><time datetime="17:00">5:00 PM</time></td>
+            </tr>
+
+            <tr>
+                <th scope="row">Tuesday</th>
+                <td><time datetime="09:00">9:00 AM</time></td>
+                <td><time datetime="17:00">5:00 PM</time></td>
+            </tr>
+
+            <tr>
+                <th scope="row">Wednesday</th>
+                <td><time datetime="09:00">9:00 AM</time></td>
+                <td><time datetime="17:00">5:00 PM</time></td>
+            </tr>
+
+            <tr>
+                <th scope="row">Thursday</th>
+                <td><time datetime="09:00">9:00 AM</time></td>
+                <td><time datetime="17:00">5:00 PM</time></td>
+            </tr>
+
+            <tr>
+                <th scope="row">Friday</th>
+                <td><time datetime="09:00">9:00 AM</time></td>
+                <td><time datetime="17:00">5:00 PM</time></td>
+            </tr>
+
+            <tr>
+                <th scope="row">Saturday</th>
+                <td><time datetime="10:00">10:00 AM</time></td>
+                <td><time datetime="14:00">2:00 PM</time></td>
+            </tr>
+
+            <tr>
+                <th scope="row">Sunday</th>
+                <td colspan="2">Closed</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    </main>
+
+</body>
+</html>
+-->

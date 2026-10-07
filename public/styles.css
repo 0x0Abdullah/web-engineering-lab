@@ -1,4 +1,4 @@
-
+/*
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -47,4 +47,786 @@ textarea {
   display: block;
   font-size: 0.9rem;
   margin-top: 4px;
+} */
+/*
+.page-reset,
+.page-reset *,
+.page-reset *::before,
+.page-reset *::after {
+    box-sizing: border-box;
+}
+
+.page-reset {
+    margin: 0;
+}
+
+:where(.page-reset *) {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7fb;
+    color: #222;
+}
+
+
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 10px;
+    background-color: #0b3d91;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    left: 10px;
+}
+
+
+
+
+.site-header {
+    background-color: #0b3d91;
+    color: white;
+    padding: 20px;
+}
+
+.header-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    margin: 0 0 15px;
+    font-size: 32px;
+}
+
+
+
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+main {
+    max-inline-size: 1000px;
+    margin-block: 40px;
+    margin-inline: auto;
+    padding-inline: 20px;
+}
+
+.section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #0b3d91;
+    margin-top: 0;
+}
+
+
+
+
+.location-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #eef4ff;
+    border-radius: 6px;
+}
+
+.location-info svg {
+    flex-shrink: 0;
+}
+
+.location-info figcaption {
+    font-weight: bold;
+}
+
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+caption {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th,
+td {
+    border: 1px solid #999;
+    padding: 12px;
+    text-align: left;
+}
+
+thead th {
+    background-color: #0b3d91;
+    color: white;
+}
+
+tbody th {
+    background-color: #eef4ff;
+}
+
+
+
+
+.divider {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.divider svg {
+    fill: #0b3d91;
+}
+
+
+
+form {
+    max-width: 700px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #777;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.hint {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #999;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+.radio-option {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.radio-option label {
+    margin: 0;
+    font-weight: normal;
+}
+
+
+
+button {
+    background-color: #0b3d91;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #082d6b;
+}
+
+
+
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 3px solid #0b5fff;
+    outline-offset: 2px;
+}
+
+
+
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer address {
+    font-style: normal;
+}
+
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 25px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        margin-block: 20px;
+        padding-inline: 10px;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+    .location-info {
+        align-items: flex-start;
+    }
+} */
+
+/* ==========================================================================
+   LAB 03 - THE CASCADE
+   Layer order written here is the final word: later layers win, and
+   unlayered CSS would beat every layer - so ALL rules live in a layer.
+   ========================================================================== */
+
+@layer reset, base, components, utilities;
+
+/* ---------------------------------------------------------------- reset -- */
+@layer reset {
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  body,
+  h1,
+  h2,
+  p,
+  figure {
+    margin: 0;
+  }
+
+  .page-reset,
+  .page-reset *,
+  .page-reset *::before,
+  .page-reset *::after {
+    box-sizing: border-box;
+  }
+
+  .page-reset {
+    margin: 0;
+  }
+
+  :where(.page-reset *) {
+    margin: 0;
+  }
+}
+
+/* ----------------------------------------------------------------- base -- */
+@layer base {
+
+  :root {
+    color-scheme: light dark;
+
+    /* design tokens - the single place to re-theme the whole page */
+    --space: 1rem;
+
+    /* modern colour: oklch() + light-dark() */
+    --color-bg: light-dark(oklch(98% 0.01 255), oklch(20% 0.02 255));
+    --color-text: light-dark(oklch(25% 0.02 255), oklch(94% 0.01 255));
+    --color-accent: light-dark(oklch(45% 0.18 255), oklch(75% 0.12 255));
+
+    /* derived tokens: color-mix() */
+    --color-surface: color-mix(in oklch, var(--color-bg) 92%, var(--color-accent));
+    --color-border: color-mix(in oklch, var(--color-text) 55%, var(--color-bg));
+    --color-muted: color-mix(in oklch, var(--color-text) 80%, var(--color-bg));
+    --color-subtle: color-mix(in oklch, var(--color-text) 10%, var(--color-bg));
+    --color-stripe: color-mix(in oklch, var(--color-text) 5%, var(--color-bg));
+    --color-tint: color-mix(in oklch, var(--color-accent) 12%, var(--color-bg));
+
+    /* fixed chrome: header/footer band + always-light nav chips */
+    --color-header: oklch(38% 0.11 255);
+    --color-chip: light-dark(oklch(99% 0.005 255), oklch(98% 0.005 255));
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.5;
+    padding: var(--space);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+  }
+
+  input,
+  textarea,
+  button,
+  select {
+    font: inherit;
+  }
+
+  main {
+    max-inline-size: 60rem;
+    margin-inline: auto;
+    padding-block: var(--space);
+    padding-inline: 20px;
+  }
+}
+
+/* ----------------------------------------------------------- components -- */
+@layer components {
+
+  /* skip link */
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 10px;
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+    padding: 10px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 1000;
+  }
+
+  .skip-link:focus {
+    left: 10px;
+  }
+
+  /* header + navigation */
+  .site-header {
+    background-color: var(--color-header);
+    color: var(--color-chip);
+    padding: 20px;
+  }
+
+  .header-container {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  h1 {
+    margin: 0 0 15px;
+    font-size: 32px;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav a {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background-color: var(--color-chip);
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* sections */
+  .section {
+    background-color: var(--color-surface);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+  }
+
+  h2 {
+    color: var(--color-accent);
+    margin-top: 0;
+  }
+
+  .location-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: var(--color-tint);
+    border-radius: 6px;
+  }
+
+  .location-info svg {
+    flex-shrink: 0;
+  }
+
+  .location-info figcaption {
+    font-weight: bold;
+  }
+
+  .divider {
+    text-align: center;
+    margin: 25px 0;
+  }
+
+  .divider svg {
+    fill: currentColor;
+  }
+
+  /* icons follow the accent colour */
+  svg {
+    color: var(--color-accent);
+  }
+
+  /* table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: var(--color-surface);
+  }
+
+  caption {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  th,
+  td {
+    border: 1px solid var(--color-border);
+    padding: 12px;
+    text-align: left;
+  }
+
+  thead th {
+    background-color: var(--color-header);
+    color: var(--color-chip);
+  }
+
+  tbody th {
+    background-color: var(--color-tint);
+  }
+
+  /* form */
+  form {
+    max-width: 700px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--color-border);
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  .hint {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: var(--color-muted);
+  }
+
+  fieldset {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid var(--color-border);
+    border-radius: 5px;
+  }
+
+  legend {
+    font-weight: bold;
+    padding: 0 8px;
+  }
+
+  .radio-option {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .radio-option label {
+    margin: 0;
+    font-weight: normal;
+  }
+
+  /* Task 2: every paragraph in the feedback form gets top/bottom margin.
+     Name (1rem bottom) touches Email (0.5rem top) and the margins collapse,
+     so the measured gap is 1rem - not 1.5rem. */
+  form p,
+  form .form-group {
+    margin-block: 0.5rem 1rem;
+  }
+
+  button {
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: color-mix(in oklch, var(--color-accent), black 15%);
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  /* office hours table (Lab 3 active block) */
+  .office-hours {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+
+  .office-hours h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+
+  .office-hours table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--color-surface);
+  }
+
+  .office-hours caption {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .office-hours th,
+  .office-hours td {
+    padding: 12px 16px;
+    border: 1px solid var(--color-border);
+    text-align: left;
+  }
+
+  .office-hours thead th {
+    background-color: var(--color-header);
+    color: var(--color-chip);
+    font-weight: bold;
+  }
+
+  .office-hours tbody th {
+    font-weight: 600;
+  }
+
+  .office-hours tbody tr:nth-child(even) {
+    background-color: var(--color-stripe);
+  }
+
+  .office-hours time {
+    white-space: nowrap;
+  }
+
+  /* footer */
+  footer {
+    background-color: var(--color-header);
+    color: var(--color-chip);
+    text-align: center;
+    padding: 25px;
+  }
+
+  footer address {
+    font-style: normal;
+  }
+
+  @media (max-width: 600px) {
+
+    h1 {
+      font-size: 25px;
+    }
+
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    main {
+      margin-block: 20px;
+      padding-inline: 10px;
+    }
+
+    .section {
+      padding: 20px;
+    }
+
+    table {
+      font-size: 14px;
+    }
+
+    th,
+    td {
+      padding: 8px;
+    }
+
+    .location-info {
+      align-items: flex-start;
+    }
+  }
+
+  /* =========================================================================
+     Task 3 - three deliberately conflicting rules.
+     Predict before saving: every .nav-link is darkgreen (0,1,0), the current
+     page link turns crimson (0,1,1) and purple (0,0,4) never wins.
+     ========================================================================= */
+  nav ul li a {
+    color: purple;
+  }
+
+  .nav-link {
+    color: darkgreen;
+  }
+
+  a[aria-current="location"] {
+    color: crimson;
+  }
+
+  /* Task 4 - the !important anti-pattern: observed, then removed.
+     .nav-link { color: darkgreen !important; } */
+
+  /* Task 4, Step 5 - the real fix: lower the over-specific selector with
+     :where(), which adds no specificity, so class/attribute rules win. */
+  :where(nav ul li) a {
+    color: purple;
+  }
+
+  /* Task 8 - experiment, observed in DevTools then deleted:
+     @layer base       { #schedule-heading { color: crimson; } }
+     @layer components { h2 { color: var(--color-accent); } }
+     The plain h2 in the later layer still won over the id selector. */
+}
+
+/* ----------------------------------------------------------- utilities -- */
+@layer utilities {
+  .text-muted {
+    color: var(--color-muted);
+  }
 }
