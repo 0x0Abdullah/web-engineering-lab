@@ -497,6 +497,11 @@ footer address {
   .header-container {
     max-width: 1000px;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space);
   }
 
   h1 {
@@ -506,7 +511,7 @@ footer address {
 
   nav ul {
     display: flex;
-    gap: 25px;
+    gap: 1.5rem;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -557,6 +562,24 @@ footer address {
     font-weight: bold;
   }
 
+  #schedule {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--space);
+    align-items: start;
+  }
+
+  /* the table takes the wider first column, the caption the narrow second */
+  #schedule table {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  #schedule figure {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
   .divider {
     text-align: center;
     margin: 25px 0;
@@ -602,9 +625,26 @@ footer address {
     background-color: var(--color-tint);
   }
 
+  tr.selected th,
+  tr.selected td {
+    background: color-mix(in oklch, var(--color-accent) 20%, var(--color-bg));
+  }
+
   /* form */
   form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 var(--space);
     max-width: 700px;
+  }
+
+  form button {
+    justify-self: start;
+  }
+
+  input:not([type="radio"]),
+  textarea {
+    inline-size: 100%;
   }
 
   .form-group {
@@ -792,6 +832,14 @@ footer address {
     }
   }
 
+  /* Lab 4 - one media query collapses both grids to a single column */
+  @media (max-width: 40rem) {
+    #schedule,
+    form {
+      grid-template-columns: 1fr;
+    }
+  }
+
   /* =========================================================================
      Task 3 - three deliberately conflicting rules.
      Predict before saving: every .nav-link is darkgreen (0,1,0), the current
@@ -828,5 +876,9 @@ footer address {
 @layer utilities {
   .text-muted {
     color: var(--color-muted);
+  }
+
+  .span-all {
+    grid-column: 1 / -1;
   }
 }

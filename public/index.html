@@ -262,7 +262,7 @@
         
         <section id="schedule" class="section office-hours">
 
-            <h2 id="schedule-heading">Office Hours</h2>
+            <h2 id="schedule-heading" class="span-all">Office Hours</h2>
 
             
             <figure class="location-info">
@@ -290,6 +290,8 @@
 
             </figure>
 
+            <p id="status" role="status" class="span-all text-muted"></p>
+
 
             
             <table>
@@ -303,6 +305,7 @@
                         <th scope="col">Day</th>
                         <th scope="col">Opening Time</th>
                         <th scope="col">Closing Time</th>
+                        <th scope="col">Book</th>
                     </tr>
                 </thead>
 
@@ -312,41 +315,48 @@
                         <th scope="row">Monday</th>
                         <td><time datetime="09:00">9:00 AM</time></td>
                         <td><time datetime="17:00">5:00 PM</time></td>
+                        <td><button type="button" data-day="Monday" aria-label="Select Monday">Select</button></td>
                     </tr>
 
                     <tr>
                         <th scope="row">Tuesday</th>
                         <td><time datetime="09:00">9:00 AM</time></td>
                         <td><time datetime="17:00">5:00 PM</time></td>
+                        <td><button type="button" data-day="Tuesday" aria-label="Select Tuesday">Select</button></td>
                     </tr>
 
                     <tr>
                         <th scope="row">Wednesday</th>
                         <td><time datetime="09:00">9:00 AM</time></td>
                         <td><time datetime="17:00">5:00 PM</time></td>
+                        <td><button type="button" data-day="Wednesday" aria-label="Select Wednesday">Select</button></td>
                     </tr>
 
                     <tr>
                         <th scope="row">Thursday</th>
                         <td><time datetime="09:00">9:00 AM</time></td>
                         <td><time datetime="17:00">5:00 PM</time></td>
+                        <td><button type="button" data-day="Thursday" aria-label="Select Thursday">Select</button></td>
                     </tr>
 
                     <tr>
                         <th scope="row">Friday</th>
                         <td><time datetime="09:00">9:00 AM</time></td>
                         <td><time datetime="17:00">5:00 PM</time></td>
+                        <td><button type="button" data-day="Friday" aria-label="Select Friday">Select</button></td>
                     </tr>
 
                     <tr>
                         <th scope="row">Saturday</th>
                         <td><time datetime="10:00">10:00 AM</time></td>
                         <td><time datetime="14:00">2:00 PM</time></td>
+                        <td><button type="button" data-day="Saturday" aria-label="Select Saturday">Select</button></td>
                     </tr>
 
                     <tr>
                         <th scope="row">Sunday</th>
                         <td colspan="2">Closed</td>
+                        <td><button type="button" data-day="Sunday" aria-label="Select Sunday">Select</button></td>
                     </tr>
 
                 </tbody>
@@ -462,7 +472,7 @@
                 </p>
 
 
-                <fieldset>
+                <fieldset class="span-all">
 
                     <legend>Topic</legend>
 
@@ -515,7 +525,7 @@
 
 
                 
-                <p class="form-group">
+                <p class="form-group span-all">
 
                     <label for="message">
                         Message
@@ -546,6 +556,9 @@
         </address>
 
     </footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="main.js"></script>
 
 </body>
 </html>
